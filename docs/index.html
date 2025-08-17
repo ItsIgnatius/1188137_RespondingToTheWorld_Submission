@@ -1,1 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Two Sides of the Same Coin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="viewport-info" id="viewport-info"></div>
+  
+  <main class="main-container">
+    <header id="cycleHeader" class="cycle-header">
+      <h1 class="cycle-header-title">Two sides of the same coin</h1>
+    </header>
+    
+    <section id="section1Text">
+      <p class="cycle-text">Before the Anthropocene, the earth and all living beings within it maintained a natural cycle of life.</p>
+    </section>
+    
+    <div id="section1Images" class="image-grid">
+      <img src="images/cycle1.png" alt="Cycle 1">
+      <img src="images/cycle2.png" alt="Cycle 2">
+      <img src="images/cycle3.png" alt="Cycle 3">
+    </div>
+    
+    <section id="section2Text">
+      <p class="cycle-text">Until human activity became the dominant influence on the earth's climate and environment, heavily affecting the ecosystem and distorting the cycle.</p>
+    </section>
+    
+    <div id="section2Images" class="image-grid">
+      <img src="images/cycle4.png" alt="Cycle 4">
+      <img src="images/cycle5.png" alt="Cycle 5">
+      <img src="images/cycle6.png" alt="Cycle 6">
+    </div>
+    
+    <section id="section3Text">
+      <p class="cycle-text">But just as a coin has two sides, humanity first destabilised the natural cycle, but are now actively working to provide an even greater, sustainable, and stable cycle of life.</p>
+    </section>
+    
+    <div id="section3Images" class="image-grid">
+      <img src="images/cycle7.png" alt="Cycle 7">
+      <img src="images/cycle8.png" alt="Cycle 8">
+      <img src="images/cycle9.png" alt="Cycle 9">
+    </div>
+    
+    <section id="section4Text">
+      <p class="cycle-text">And perhaps one day, with enough effort, such a harmonious world will be possible.</p>
+    </section>
+    
+    <div id="section4Images" class="image-grid single">
+      <img src="images/cycle10.png" alt="Cycle 10">
+    </div>
+  </main>
 
+  <script>
+    function updateViewportInfo() {
+      const info = document.getElementById('viewport-info');
+      info.textContent = `${window.innerWidth}px × ${window.innerHeight}px`;
+    }
+    
+    window.addEventListener('resize', updateViewportInfo);
+    updateViewportInfo();
+  </script>
+</body>
+</html>
